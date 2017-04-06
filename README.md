@@ -1,10 +1,7 @@
 gorending
 ===
 
-Dependencies
----
-
-- [gocrawl](https://github.com/PuerkitoBio/gocrawl)
+[![Build Status](https://travis-ci.org/Leop0ld/gorending.svg?branch=master)](https://travis-ci.org/Leop0ld/gorending)
 
 
 Installation
