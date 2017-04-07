@@ -6,9 +6,9 @@ gorending
 
 Installation
 ---
-go get github.com/leop0ld/gorending
+`$ go get github.com/leop0ld/gorending`
 
 
 License
 ---
-This repo is using [Beer-ware license](https://en.wikipedia.org/wiki/Beerware)
+[MIT License](https://en.wikipedia.org/wiki/MIT_License)
