@@ -44,12 +44,12 @@ func main() {
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
-			Name:  "lang, l",
+			Name:  "lang, L",
 			Value: "",
 			Usage: "language that you want to see, default all language",
 		},
 		cli.IntFlag{
-			Name:  "count, c",
+			Name:  "count, C",
 			Value: 10,
 			Usage: "count that you want to see, defalut 10",
 		},
