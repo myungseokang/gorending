@@ -11,16 +11,18 @@ import (
 	"github.com/urfave/cli"
 )
 
-func CrawlTrending(lang string) error {
+func CrawlTrending(lang string, count int) error {
 	doc, err := goquery.NewDocument("https://github.com/trending/" + lang)
 	if err != nil {
 		log.Fatal(err)
 		return err
 	}
 
-	doc.Find(".d-inline-block > h3 > a").Each(func(i int, s *goquery.Selection) {
+	repoList := doc.Find(".d-inline-block > h3 > a").Slice(0, count)
+
+	repoList.Each(func(i int, s *goquery.Selection) {
 		repoName := strings.Trim(s.Text(), " \n")
-		fmt.Printf("%d - %s\n", i, repoName)
+		fmt.Printf("%d - %s\n", i+1, repoName)
 	})
 	return nil
 }
@@ -43,14 +45,20 @@ func main() {
 		cli.StringFlag{
 			Name:  "lang, l",
 			Value: "",
-			Usage: "language that you want",
+			Usage: "language that you want to see, default all language",
+		},
+		cli.IntFlag{
+			Name:  "count, c",
+			Value: 10,
+			Usage: "count that you want to see, defalut 10",
 		},
 	}
 
 	app.Action = func(c *cli.Context) error {
 		lang := c.String("lang")
+		count := c.Int("count")
 
-		err := CrawlTrending(lang)
+		err := CrawlTrending(lang, count)
 		if err != nil {
 			return err
 		}
