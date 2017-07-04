@@ -11,6 +11,7 @@ import (
 	"github.com/urfave/cli"
 )
 
+// CrawlTrending is function for printing parsed trending
 func CrawlTrending(lang string, count int) error {
 	doc, err := goquery.NewDocument("https://github.com/trending/" + lang)
 	if err != nil {
