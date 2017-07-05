@@ -15,11 +15,6 @@ Installation
 $ go get github.com/leop0ld/gorending
 ```
 
-```shell
-# in mac OS
-$ cp ~/go/bin/gorending /usr/local/bin
-```
-
 #### Dependencies
 
 - [github.com/urfave/cli](https://github.com/urfave/cli)
