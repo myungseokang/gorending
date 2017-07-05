@@ -7,7 +7,7 @@ gorending
 
 Demo
 ---
-<script type="text/javascript" src="https://asciinema.org/a/ujAF6W6sHJMMMXCOmKqQUOzyR.js" id="asciicast-ujAF6W6sHJMMMXCOmKqQUOzyR" async></script>
+<a href="https://asciinema.org/a/127793" target="_blank"><img src="https://asciinema.org/a/127793.png" /></a>
 
 Installation
 ---
