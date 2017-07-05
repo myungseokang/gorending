@@ -1,3 +1,4 @@
+// Gorending is cli tool that crawls github trending in real time.
 package main
 
 import (
@@ -11,7 +12,7 @@ import (
 	"github.com/urfave/cli"
 )
 
-// CrawlTrending is function for printing parsed trending
+// CrawlTrending function requests to Github website and prints parsed trendings.
 func CrawlTrending(lang string, count int) error {
 	doc, err := goquery.NewDocument("https://github.com/trending/" + lang)
 	if err != nil {
@@ -43,11 +44,13 @@ func main() {
 	}
 
 	app.Flags = []cli.Flag{
+		// lang flag is language that you want to see
 		cli.StringFlag{
 			Name:  "lang, L",
 			Value: "",
 			Usage: "language that you want to see (default: all language)",
 		},
+		// count flag is count that you want to see
 		cli.IntFlag{
 			Name:  "count, C",
 			Value: 10,
