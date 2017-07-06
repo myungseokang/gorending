@@ -15,11 +15,13 @@ Installation
 Write into your `.bashrc` or `.zshrc`
 ```shell
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 ```
 
 And then
 ```shell
+$ source ~/.zshrc # or ~/.bashrc
 $ go get github.com/leop0ld/gorending
 ```
 
