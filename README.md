@@ -11,6 +11,14 @@ Demo
 
 Installation
 ---
+
+Write into your `.bashrc` or `.zshrc`
+```shell
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+```
+
+And then
 ```shell
 $ go get github.com/leop0ld/gorending
 ```
