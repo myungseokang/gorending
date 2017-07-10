@@ -1,4 +1,4 @@
-// Gorending is cli tool that crawls github trending in real time.
+// Gorending is cli tool that crawls github trendings in Terminal at real time.
 package main
 
 import (
@@ -12,9 +12,15 @@ import (
 	"github.com/urfave/cli"
 )
 
+// GithubURL is Github url
+var GithubURL = "https://github.com"
+
+// TrendingURL is Github trending url
+var TrendingURL = GithubURL + "/trending/"
+
 // CrawlTrending function requests to Github website and prints parsed trendings.
 func CrawlTrending(lang string, count int) error {
-	doc, err := goquery.NewDocument("https://github.com/trending/" + lang)
+	doc, err := goquery.NewDocument(TrendingURL + lang)
 	if err != nil {
 		log.Fatal(err)
 		return err
@@ -23,8 +29,11 @@ func CrawlTrending(lang string, count int) error {
 	repoList := doc.Find(".d-inline-block > h3 > a").Slice(0, count)
 
 	repoList.Each(func(i int, s *goquery.Selection) {
+		repoURL, ok := s.Attr("href")
 		repoName := strings.Trim(s.Text(), " \n")
-		fmt.Printf("%d - %s\n", i+1, repoName)
+		if ok {
+			fmt.Printf("%d - %s (%s)\n", i+1, repoName, GithubURL+repoURL)
+		}
 	})
 	return nil
 }
@@ -33,7 +42,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "gorending"
 	app.Usage = "Show Github trending in Terminal!"
-	app.Version = "1.0.0"
+	app.Version = "1.0.1"
 	app.Compiled = time.Now()
 	app.Copyright = "(c) 2017 Myungseo Kang"
 	app.Authors = []cli.Author{
