@@ -13,17 +13,17 @@ Demo
 Installation
 ---
 
-Write into your `.bashrc` or `.zshrc`
+Write into your `.bashrc` or `.zshrc`;
 ```shell
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 ```
 
-And then
+And then;
 ```shell
 $ source ~/.zshrc # or ~/.bashrc
-$ go get github.com/leop0ld/gorending
+$ go get -u github.com/leop0ld/gorending
 ```
 
 #### Dependencies
@@ -33,7 +33,7 @@ $ go get github.com/leop0ld/gorending
 
 Example
 ---
-If you want to see 5 repositories about golang in Github trending, type like below.
+If you want to see 5 repositories about golang in Github trending, type like below;
 
 ```shell
 $ gorending --lang go --count 5
@@ -45,7 +45,7 @@ or
 $ gorending -L go -C 5
 ```
 
-If you want to see 15 repositories about all languages in Github trending, type this.
+If you want to see 15 repositories about all languages in Github trending, type this;
 
 ```shell
 $ gorending --count 15
