@@ -19,7 +19,9 @@
 
 <br><br>
 
-<img src="screenshot.png" alt="Example">
+<div align="center">
+    <img src="screenshot.png" alt="Example">
+</div>
 
 Installation
 ---
