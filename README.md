@@ -19,6 +19,8 @@
 
 <br><br>
 
+<img src="screenshot.png" alt="Example">
+
 Installation
 ---
 
@@ -67,3 +69,7 @@ or
 ```shell
 $ gorending -C 15
 ```
+
+And move cursor, input ENTER.
+
+Then open default browser with selected tredings URL.
