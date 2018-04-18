@@ -1,5 +1,5 @@
 // Package gorending is cli tool that show github trendings and open browser with selected trending URL in Terminal at real-time.
-package gorending
+package main
 
 import (
 	"log"
