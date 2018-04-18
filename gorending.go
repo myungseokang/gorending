@@ -1,4 +1,4 @@
-// Gorending is cli tool that crawls github trendings in Terminal at real time.
+// Package gorending is cli tool that show github trendings and open browser with selected trending URL in Terminal at real-time.
 package gorending
 
 import (
@@ -28,12 +28,12 @@ type Repository struct {
 
 // CrawlTrending function requests to Github website and prints parsed trendings.
 func CrawlTrending(lang string, count int) []Repository {
-	doc, err := goquery.NewDocument(TrendingURL)
+	doc, err := goquery.NewDocument(TrendingURL + lang)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	rawRepoList := doc.Find(".d-inline-block > h3 > a").Slice(0, 10)
+	rawRepoList := doc.Find(".d-inline-block > h3 > a").Slice(0, count)
 
 	repoList := []Repository{}
 
@@ -57,6 +57,7 @@ func CrawlTrending(lang string, count int) []Repository {
 	return repoList
 }
 
+// ShowPrompt function shows prompt about trendings and open browser about selected trending.
 func ShowPrompt(repoList []Repository) error {
 	templates := &promptui.SelectTemplates{
 		Label:    "{{ . }}?",

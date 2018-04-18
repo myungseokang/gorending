@@ -1,10 +1,21 @@
-gorending
-===
+<br><br>
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/Leop0ld/gorending)](https://goreportcard.com/report/github.com/Leop0ld/gorending)
-<a href="https://godoc.org/github.com/Leop0ld/gorending" target="_blank"><img src="https://godoc.org/github.com/Leop0ld/gorending?status.svg" alt="GoDoc"></a>
-[![Build Status](https://travis-ci.org/Leop0ld/gorending.svg?branch=master)](https://travis-ci.org/Leop0ld/gorending)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Leop0ld/gorending/master/LICENSE)
+<h1 align="center">Gorending</h1>
+
+<p align="center">
+    <a href="https://goreportcard.com/report/github.com/Leop0ld/gorending" target="_blank">
+        <img src="https://goreportcard.com/badge/github.com/Leop0ld/gorending" alt="Go Report Card">
+    </a>
+    <a href="https://godoc.org/github.com/Leop0ld/gorending" target="_blank">
+        <img src="https://godoc.org/github.com/Leop0ld/gorending?status.svg" alt="GoDoc">
+    </a>
+    <a href="https://travis-ci.org/Leop0ld/gorending">
+        <img src="https://travis-ci.org/Leop0ld/gorending.svg?branch=master" alt="Build Status">
+    </a>
+    <a href="https://raw.githubusercontent.com/Leop0ld/gorending/master/LICENSE">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license">
+    </a>
+</p>
 
 Demo
 ---
@@ -30,6 +41,8 @@ $ go get -u github.com/leop0ld/gorending
 
 - [github.com/urfave/cli](https://github.com/urfave/cli)
 - [github.com/PuerkitoBio/goquery](https://github.com/PuerkitoBio/goquery)
+- [github.com/manifoldco/promptui](https://github.com/manifoldco/promptui)
+- [github.com/skratchdot/open-golang/open](https://github.com/skratchdot/open-golang/open)
 
 Example
 ---
