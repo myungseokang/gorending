@@ -17,10 +17,6 @@
     </a>
 </p>
 
-Demo
----
-<a href="https://asciinema.org/a/127793" target="_blank"><img src="https://asciinema.org/a/127793.png" /></a>
-
 Installation
 ---
 
@@ -69,8 +65,3 @@ or
 ```shell
 $ gorending -C 15
 ```
-
-
-License
----
-[MIT License](https://en.wikipedia.org/wiki/MIT_License)
