@@ -20,7 +20,7 @@
 <br><br>
 
 <p align="center">
-    <img src="./assets/example.svg">
+    <img src="https://cdn.rawgit.com/leop0ld/gorending/master/assets/example.svg">
 </p>
 
 Installation
