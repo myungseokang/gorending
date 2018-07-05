@@ -23,6 +23,8 @@
     <img src="https://cdn.rawgit.com/leop0ld/gorending/master/assets/example.svg">
 </p>
 
+<br><br>
+
 Installation
 ---
 
