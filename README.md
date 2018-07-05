@@ -19,9 +19,9 @@
 
 <br><br>
 
-<div align="center">
-    <img src="./assets/example.svg">
-</div>
+<p align="center">
+    <img src="./assets/example.png">
+</p>
 
 Installation
 ---
