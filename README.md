@@ -20,7 +20,7 @@
 <br><br>
 
 <div align="center">
-    <img src="screenshot.png" alt="Example">
+    <img src="./assets/example.svg">
 </div>
 
 Installation
