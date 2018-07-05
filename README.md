@@ -20,7 +20,7 @@
 <br><br>
 
 <p align="center">
-    <img src="./assets/example.png">
+    <img src="./assets/example.svg">
 </p>
 
 Installation
