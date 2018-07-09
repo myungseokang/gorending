@@ -46,7 +46,7 @@ $ go get -u github.com/leop0ld/gorending
 - [github.com/urfave/cli](https://github.com/urfave/cli)
 - [github.com/PuerkitoBio/goquery](https://github.com/PuerkitoBio/goquery)
 - [github.com/manifoldco/promptui](https://github.com/manifoldco/promptui)
-- [github.com/skratchdot/open-golang/open](https://github.com/skratchdot/open-golang/open)
+- [github.com/skratchdot/open-golang](https://github.com/skratchdot/open-golang)
 
 Example
 ---
